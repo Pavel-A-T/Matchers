@@ -14,3 +14,7 @@ const sortedArr = [
 test(('Сортировка по здоровью'), () => {
   expect(sortArray(arr)).toEqual(sortedArr);
 });
+
+test(('Сортировка по здоровью с toBe, которая должна упасть'), () => {
+  expect(sortArray(arr)).not.toBe(sortedArr);
+});
